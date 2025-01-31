@@ -16,7 +16,7 @@
 * <strong>NUnit</strong>
     * NUnit provides built-in support for generating HTML reports.
     * The below image shows the NUnite generated test report for the web application.
-      <img height="180" src="https://github.com/Tiffany678/Selenium/blob/master/IdlingComplaintTest3/Files/Images/ReadmeImage/Report.png" alt="Get request" width="500"/>
+      <img height="180" src="https://github.com/Tiffany678/Selenium/blob/main/IdlingComplaintTest3/Files/Images/ReadmeImage/Report.png" alt="Get request" width="500"/>
 
 
 ## 2.1. Additional Methods
@@ -54,7 +54,7 @@
 <p>The Page Object Pattern is a design approach that enhances the structure of a test automation framework by separating test logic from UI interactions. This improves maintainability, reduces redundancy, and makes tests more readable and scalable.</p>
 
 * Our Project Folder Structure Map <br/>
-  <img height="550" src="https://github.com/Tiffany678/Selenium/blob/master/IdlingComplaintTest3/Files/Images/ReadmeImage/ProjectStructure.png" alt="Get request" width="650"/>
+  <img height="550" src="https://github.com/Tiffany678/Selenium/blob/main/IdlingComplaintTest3/Files/Images/ReadmeImage/ProjectStructure.png" alt="Get request" width="650"/>
 
 * Let’s go ahead and <b>create our page object</b> – in this case, our login page:
   ``` 
