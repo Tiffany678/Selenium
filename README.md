@@ -107,4 +107,4 @@
 ## 4. Consclusion
 
 In this quick tutorial, we focused on improving our usage of Selenium/WebDriver with the help of the Page-Object Pattern. We went through different examples and implementations to see the practical ways of utilizing the pattern to interact with the testing website.
-# Selenium
+
