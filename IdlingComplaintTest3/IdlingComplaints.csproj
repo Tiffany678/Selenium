@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Files\READMEImages\**" />
+    <Compile Remove="Tests\Register\logs\**" />
+    <EmbeddedResource Remove="Files\READMEImages\**" />
+    <EmbeddedResource Remove="Tests\Register\logs\**" />
+    <None Remove="Files\READMEImages\**" />
+    <None Remove="Tests\Register\logs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Files\Text\BlankTextFile_ForEvidenceUpload.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Files\Text\BlankTextFile_ForEvidenceUpload.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.15" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.3" />
+    <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
+    <PackageReference Include="NUnit.Analyzers" Version="3.6.1" />
+    <PackageReference Include="coverlet.collector" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Selenium.Mozilla.Firefox.Webdriver" Version="0.6.0.1" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.10.0" />
+    <PackageReference Include="Selenium.WebDriver.MSEdgeDriver" Version="114.0.1823.58" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SeleniumUtilities\SeleniumUtilities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Files\Text\Registered_EmailAddress.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
